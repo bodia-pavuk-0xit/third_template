@@ -1,0 +1,213 @@
+.header, .menu, .footer {
+    width: 100%;
+    
+  }
+header {
+    background-color: #dcdcdc;
+    padding: 0px 50px;
+    
+}
+
+.logo-phone-container{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    
+}
+/* Стилі для меню сайту */
+.menu {
+    background-color: #767676;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    }
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+.menu li{
+    border-right: 2px solid #fff;
+    padding-right: 10px; /* додатковий відступ для елементів */
+    }
+    
+.menu li:last-child {
+    border-right: none; /* видалення правого бордеру для останнього елемента */
+    }
+
+
+.menu a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.75px;
+    line-height: normal;
+    font-style: normal;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+
+}
+.navigation ul li {
+    display: inline-block;
+    padding: 0px 10px 0px 0px;
+    margin: 10px 5px;
+    text-align: center;
+}
+
+
+.navigation-container {
+    max-width: 960;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    @font-face {
+        font-family: 'Open Sans Condensed Light';
+        src: url('../fonts/Open_Sans_Condensed_Light/OpenSans-CondLight.ttf') format('truetype');
+      }
+
+.phone{
+    font-family: 'Open Sans Condensed Light', sans-serif;
+    color: #767676;
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: right;
+    
+    }
+
+.feedback a{
+    text-decoration: underline dashed;
+    color: #767676;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    border-right: 6px solid #767676;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.namecompany{
+    color: #767676;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 30px;
+    text-align: left;
+
+    margin: 0px 0px 0px 7px;
+}
+
+.slogan{
+    color: #767676;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+    margin: 5px 0px 0px 11px;
+}
+/* --------------------Адаптив-----------------------*/
+/* Для екранів менше 768 пікселів */
+@media (max-width: 768px) {
+   
+    .logo-phone-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .phone{
+        font-size: 35px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+    .feedback a{
+        text-decoration: underline dashed;
+        color: #767676;
+
+        
+    }
+    .logo img{
+        height: 150px;
+        width: 150px;
+        border-right: 6px solid #767676;
+    }
+    
+    .namecompany{
+        color: #767676;
+        font-size: 45px;
+    }
+    
+    .slogan{
+        font-size: 20px;
+        margin: 5px 0px 0px 11px;
+    }
+
+    .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: 999;
+    }
+    .menu ul {
+      flex-direction: column;
+    }
+    .menu li {
+      border-right: none;
+      padding-right: 0;
+      margin: 0;
+    }
+    .menu a {
+      padding: 10px 0;
+      display: block;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  
+  /* Для екранів від 768 пікселів і більше */
+  @media (min-width: 768px) {
+    .menu {
+      height: 50px;
+    }
+    .menu ul {
+      flex-direction: row;
+    }
+    .menu li {
+      border-right: 2px solid #fff;
+      padding-right: 10px;
+      margin: 10px 5px;
+    }
+    .menu li:last-child {
+      border-right: none;
+    }
+    .menu a {
+      padding: 0;
+      display: inline-block;
+      border-bottom: none;
+    }
+
+  }
+  
+/* ------------------------------------------------- */
