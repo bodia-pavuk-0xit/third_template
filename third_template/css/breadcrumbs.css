@@ -1,4 +1,4 @@
-.container{
+.container {
     max-width: 980px;
     margin: 0 auto;
     display: flex;
@@ -6,6 +6,7 @@
     align-items: center;
     padding-left: 10px;
 }
+
 ul.breadcrumb {
     padding: 10px 0px;
     list-style: none;
@@ -36,4 +37,44 @@ ul.breadcrumb li a:hover {
 
 .breadcrumb__now {
     color: #767676;
+}
+
+/* Для екранів з шириною менше 320px*/
+@media (max-width: 320px) {
+    /* CSS правила для адаптивного дизайну */
+
+}
+
+/* Для екранів з шириною від 320px до 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+
+    /* CSS правила для адаптивного дизайну */
+    .container {
+        padding-left: 16px;
+    }
+
+    ul.breadcrumb li {
+        font-size: 22px;
+    }
+
+
+}
+
+/* Для екранів з шириною від 768px до 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS правила для адаптивного дизайну */
+    .container {
+        padding-left: 24px;
+    }
+
+    ul.breadcrumb li {
+        font-size: 30px;
+    }
+
+}
+
+/* Для екранів з шириною понад 1024px */
+@media (min-width: 1024px) {
+    /* CSS правила для адаптивного дизайну */
 }

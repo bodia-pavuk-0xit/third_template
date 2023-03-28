@@ -47,6 +47,8 @@
 .content__subitems {
     padding-left: 25px;
     text-decoration: none;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .content__subitems a {
@@ -57,6 +59,7 @@
 .subitemslist {
     list-style: none;
 }
+
 
 .content__priselist p {
     color: #444444;
@@ -80,7 +83,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-   }
+}
 
 .content__rowitems {
     background-color: #dcdcdc;
@@ -92,8 +95,8 @@
 }
 
 .rowitems img {
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     padding: 20px;
     max-width: 100%;
     height: auto;
@@ -106,7 +109,6 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0.45px;
-    margin-left: 15px;
     padding-bottom: 15%;
     text-align: left;
 }
@@ -115,7 +117,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 10px 10px 0px;
+    margin: 5% 5% 5% 5%;
     position: relative;
     padding-bottom: 5%;
 }
@@ -182,7 +184,14 @@
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+.rowitems__marginp {
+    margin: 0% 5%;
+}
+
+/* Для екранів з шириною менше 320px*/
+@media (max-width: 320px) {
+
+    /* CSS правила для адаптивного дизайну */
     .content__body {
         display: flex;
         flex-direction: column;
@@ -196,15 +205,20 @@
         align-items: center;
         padding: 0%;
         margin: 0%;
-        font-size: 35px;
-        line-height: 40px;
-    }
-    .subitemslist {
-        list-style: none; 
+        font-size: 22px;
+        line-height: 25px;
     }
 
-    .subitemslist a{
-        font-size: 20px;
+    .content__list {
+        padding-bottom: 15px;
+    }
+
+    .subitemslist {
+        list-style: none;
+    }
+
+    .subitemslist a {
+        font-size: 15px;
         line-height: normal;
     }
 
@@ -214,7 +228,7 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding-bottom: 15px;
+        padding-bottom: 20px;
     }
 
     .content__leftblock {
@@ -223,7 +237,8 @@
         align-items: center;
         padding: 0px;
     }
-    .content__subitems{
+
+    .content__subitems {
         padding-left: 0px;
     }
 
@@ -261,7 +276,6 @@
         font-weight: 400;
         line-height: 18px;
         letter-spacing: 0.45px;
-        margin: 0% 5%;
         padding-bottom: 5%;
     }
 
@@ -287,21 +301,298 @@
         line-height: 40px;
         padding-bottom: 0px;
     }
-    
-    .content__textabout{
+
+    .content__textabout {
         display: flex;
         flex-direction: column;
     }
-    .content__textaboutone{
+
+    .content__textaboutone {
         width: 100%;
         margin: 0px;
         padding-bottom: 15px;
         text-align: justify;
     }
-    .content__textabouttwo{
+
+    .content__textabouttwo {
         width: 100%;
         margin: 0px;
         text-align: justify;
     }
 
+}
+
+/* Для екранів з шириною від 320px до 768px */
+@media (min-width: 320px) and (max-width: 768px) {
+
+    /* CSS правила для адаптивного дизайну */
+    .content__body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .content__list a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .content__list {
+        padding-bottom: 15px;
+    }
+
+    .subitemslist {
+        list-style: none;
+    }
+
+    .subitemslist a {
+        font-size: 22px;
+        line-height: normal;
+        line-height: 25px;
+    }
+
+
+
+    .content__priselist {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .content__leftblock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .content__subitems {
+        padding-left: 0px;
+    }
+
+    .content__centerblock {
+        align-items: center;
+        padding: 0px;
+    }
+
+    .content__goods {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    .content__rowitems {
+        background-color: #dcdcdc;
+        width: auto;
+        margin: 1%;
+        width: 48%;
+        height: auto;
+    }
+
+    .rowitems img {
+        height: auto;
+        width: auto;
+        padding: 5%;
+        max-width: 100%;
+
+    }
+
+    .rowitems p {
+        color: #767676;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.45px;
+        padding-bottom: 5%;
+    }
+
+    .rowitems__buy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0% 5%;
+        position: relative;
+    }
+
+    .rowitems__buy img {
+        height: 35px;
+        width: 35px;
+        padding: 0px;
+        margin-right: 5%;
+    }
+
+    .rowitems__buy p {
+        color: #444444;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 40px;
+        padding-bottom: 0px;
+    }
+
+    .content__textabout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content__textaboutone {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .content__textabouttwo {
+        width: 100%;
+        margin: 0px;
+        text-align: justify;
+        font-size: 18px;
+    }
+}
+
+/* Для екранів з шириною від 768px до 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* CSS правила для адаптивного дизайну */
+    .rowitems img {
+        width: 100%;
+        max-width: 100%;
+    }
+    .content__body {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .content__list a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .subitemslist {
+        list-style: none;
+    }
+
+    .subitemslist a {
+        font-size: 28px;
+        line-height: normal;
+    }
+
+
+
+    .content__priselist {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .content__priselist img{
+        width: 110px;
+    }
+    .content__priselist p{
+        font-size: 50px;
+    }
+
+    .content__leftblock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .content__subitems {
+        padding-left: 0px;
+    }
+
+    .content__centerblock {
+        align-items: center;
+        padding: 0px;
+    }
+
+    .content__goods {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    .content__rowitems {
+        background-color: #dcdcdc;
+        width: auto;
+        margin: 1%;
+        width: 48%;
+        height: auto;
+    }
+
+
+    .rowitems p {
+        color: #767676;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.45px;
+        padding-bottom: 5%;
+    }
+
+    .rowitems__buy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0% 5%;
+        position: relative;
+    }
+
+    .rowitems__buy img {
+        height: 35px;
+        width: 35px;
+        padding: 0px;
+        margin-right: 5%;
+    }
+
+    .rowitems__buy p {
+        color: #444444;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        padding-bottom: 0px;
+    }
+
+    .content__textabout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content__textaboutone {
+        width: 100%;
+        margin: 0px;
+        padding-bottom: 15px;
+        text-align: justify;
+        font-size: 25px;
+    }
+
+    .content__textabouttwo {
+        width: 100%;
+        margin: 0px;
+        text-align: justify;
+        font-size: 25px;
+    }
+}
+
+/* Для екранів з шириною понад 1024px */
+@media (min-width: 1024px) {
+    /* CSS правила для адаптивного дизайну */
 }
