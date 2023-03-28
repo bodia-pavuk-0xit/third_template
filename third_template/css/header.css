@@ -2,7 +2,6 @@
 .menu,
 .footer {
   width: 100%;
-
 }
 
 header {
@@ -12,13 +11,11 @@ header {
 
 
 .logo-phone-container {
-  max-width: 960px;
+  max-width: 980px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-
 }
 
 /* Стилі для меню сайту */
@@ -153,7 +150,7 @@ header {
     position: absolute;
     top: 10px;
     left: 10px;
-    z-index: 9;
+    z-index: 1999;
     overflow: hidden;
     padding: 0px 50px 0px 10px;
   }
@@ -164,6 +161,7 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 1998;
     transform: translate(-50%, -50%);
     background-color: #767676;
     transition: all 0.5s;
@@ -311,6 +309,10 @@ header {
     display: inline-block;
     border-bottom: none;
   }
+  .menu a:hover{
+    text-decoration: underline;
+  }
+  
   .menu-btn{
     display: none;
   }

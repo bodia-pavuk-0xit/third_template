@@ -5,3 +5,45 @@ text-color: #535353
 button-color: #777777
 $white: #ffffff
 color-item: #6e6e6e
+
+
+<div class="content body">
+				<div class="content__leftblock">
+					<div class="content__categories">
+						<div class="content__items items">
+							<a href="#">Cars</a>
+						</div>
+						<div class="content__items items">
+							<a href="#">Appliances</a>
+						</div>
+						<div class="leftblock__items items">
+							<ul>
+								<li class="cub-cat__items__act">Microwaves</li>
+								<li>Refrigerators</li>
+								<li>Dishwashers</li>
+								<li>Kettles</li>
+							</ul>
+						</div>
+
+						<div class="leftblock__cat-items">
+							<a href="#">Mobile technology</a>
+						</div>
+						<div class="leftblock__cat-items">
+							<a href="#">Computers</a>
+						</div>
+						<div class="leftblock__cat-items">
+							<a href="#">Cloth</a>
+						</div>
+						<div class="leftblock__cat-items">
+							<a href="#">Real estate</a>
+						</div>
+					</div>
+					<div class="leftblock__price-list">
+						
+					</div>
+				</div>
+
+				<div class="content__centerblock">
+				</div>
+			</div>
+		</div>
