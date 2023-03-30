@@ -1,5 +1,5 @@
 // Отримуємо необхідні елементи DOM
-const feedbackLink = document.querySelector('.feedback a');
+const feedbackLink = document.querySelector('.header__feedback a');
 const feedbackPopup = document.querySelector('.popup');
 const feedbackClose = document.querySelector('.popup .close');
 

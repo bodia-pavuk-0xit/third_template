@@ -1,5 +1,5 @@
 .header,
-.menu,
+.header__menu,
 .footer {
   width: 100%;
 }
@@ -10,7 +10,7 @@ header {
 
 
 
-.logo-phone-container {
+.header__body {
   max-width: 980px;
   margin: 0 auto;
   display: flex;
@@ -19,14 +19,14 @@ header {
 }
 
 /* Стилі для меню сайту */
-.menu {
+.header__menu {
   background-color: #767676;
   height: 50px;
   text-align: center;
   width: 100%;
 }
 
-.menu ul {
+.header__menu ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,19 +34,19 @@ header {
 
 }
 
-.menu li {
+.header__menu li {
   border-right: 2px solid #fff;
   padding-right: 10px;
   /* додатковий відступ для елементів */
 }
 
-.menu li:last-child {
+.header__menu li:last-child {
   border-right: none;
   /* видалення правого бордеру для останнього елемента */
 }
 
 
-.menu a {
+.header__menu a {
   font-family: 'PT Sans', sans-serif;
   font-weight: 600;
   font-size: 22px;
@@ -59,7 +59,7 @@ header {
 
 }
 
-.navigation ul li {
+.header__navigation ul li {
   display: inline-block;
   padding: 0px 10px 0px 0px;
   margin: 10px 5px;
@@ -67,7 +67,7 @@ header {
 }
 
 
-.navigation-container {
+.header__navigationbody {
   max-width: 960;
   margin: 0 auto;
   display: flex;
@@ -80,7 +80,7 @@ header {
   src: url('../fonts/Open_Sans_Condensed_Light/OpenSans-CondLight.ttf') format('truetype');
 }
 
-.phone {
+.header__phone {
   font-family: 'Open Sans Condensed Light', sans-serif;
   color: #767676;
   font-size: 30px;
@@ -92,25 +92,25 @@ header {
 
 }
 
-.feedback a {
+.header__feedback a {
   text-decoration: underline dashed;
   color: #767676;
 }
 
-.logo img {
+.header__logo img {
   height: 100px;
   width: 100px;
   border-right: 6px solid #767676;
 }
 
-.logo {
+.header__logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 0px;
 }
 
-.namecompany {
+.header__namecompany {
   color: #767676;
   font-size: 30px;
   font-weight: 700;
@@ -118,11 +118,10 @@ header {
   letter-spacing: normal;
   line-height: 30px;
   text-align: left;
-
   margin: 0px 0px 0px 7px;
 }
 
-.slogan {
+.header__slogan {
   color: #767676;
   font-size: 18px;
   font-weight: 400;
@@ -132,19 +131,8 @@ header {
   text-align: left;
   margin: 5px 0px 0px 11px;
 }
-
-/* --------------------Адаптив-----------------------*/
-/* Для екранів менше 768 пікселів */
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-
-
-  /* Гамбургер іконка */
-  .menu-btn {
+@media (max-width: 320px) {
+  .header__menu-btn {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -155,7 +143,7 @@ header {
     padding: 0px 50px 0px 10px;
   }
 
-  .menu-btn span {
+  .header__menu-btn span {
     width: 30px;
     height: 2px;
     position: absolute;
@@ -167,34 +155,34 @@ header {
     transition: all 0.5s;
   }
 
-  .menu-btn span:nth-of-type(2) {
+  .header__menu-btn span:nth-of-type(2) {
     top: calc(50% - 5px);
   }
 
-  .menu-btn span:nth-of-type(3) {
+  .header__menu-btn span:nth-of-type(3) {
     top: calc(50% + 5px);
     background-color: #767676;
   }
 
   /* Змінюємо гамбургер іконку, коли меню відчинено */
-  .menu-btn.active span:nth-of-type(1) {
+  .header__menu-btn.active span:nth-of-type(1) {
     display: none;
   }
 
-  .menu-btn.active span:nth-of-type(2) {
+  .header__menu-btn.active span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
     background-color: #fff;
   }
 
-  .menu-btn.active span:nth-of-type(3) {
+  .header__menu-btn.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
     background-color: #fff;
   }
 
   /* Меню, яке буде зʼявлятися */
-  .menu {
+  .header__menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -206,25 +194,166 @@ header {
     transition: transform 0.5s;
     z-index: 8;
   }
-  .menu a{
+  .header__menu a{
     font-size: 40px;
   }
 
-  .menu.active {
+  .header__menu.active {
     transform: translateX(0);
   }
 
-  .menu li {
+  .header__menu li {
     list-style-type: none;
   }
 
-  .logo-phone-container {
+  .header__body{
     
     flex-direction: column;
     padding-bottom: 30px;
   }
 
-  .phone {
+  .header__phone {
+    font-size: 30px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__feedback a {
+    text-decoration: underline dashed;
+    color: #767676;
+    line-height: 10px;
+  }
+  .header__feedback{
+    padding-top: 15px;
+  }
+
+  .header__logo img {
+    height: 100px;
+    width: 100px;
+    border-right: 4px solid #767676;
+  }
+
+  .header__namecompany {
+    color: #767676;
+    font-size: 35px;
+  }
+
+  .header__slogan {
+    font-size: 20px;
+    margin: 5px 0px 0px 11px;
+  }
+
+  .header__menu ul {
+    flex-direction: column;
+  }
+
+  .header__menu li {
+    border-right: none;
+    border-bottom: 3px solid #fff;
+    margin: 0;
+  }
+
+  .header__menu ul li {
+    padding: 0px 0px 13px 0px;
+  }
+
+  .header__menu li:last-child {
+    border-bottom: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+
+  /* Гамбургер іконка */
+  .header__menu-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 30;
+    overflow: hidden;
+    padding: 0px 50px 0px 10px;
+  }
+
+  .header__menu-btn span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 31;
+    transform: translate(-50%, -50%);
+    background-color: #767676;
+    transition: all 0.5s;
+  }
+
+  .header__menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+  }
+
+  .header__menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+    background-color: #767676;
+  }
+
+  /* Змінюємо гамбургер іконку, коли меню відчинено */
+  .header__menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+  .header__menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+    background-color: #fff;
+  }
+
+  .header__menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+    background-color: #fff;
+  }
+
+  /* Меню, яке буде зʼявлятися */
+  .header__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background: #767676;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    z-index: 8;
+  }
+  .header__menu a{
+    font-size: 40px;
+  }
+
+  .header__menu.active {
+    transform: translateX(0);
+  }
+
+  .header__menu li {
+    list-style-type: none;
+  }
+
+  .header__body{
+    
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+
+  .header__phone {
     font-size: 35px;
     line-height: 40px;
     display: flex;
@@ -233,94 +362,91 @@ header {
     align-items: center;
   }
 
-  .feedback a {
+  .header__feedback a {
     text-decoration: underline dashed;
     color: #767676;
     line-height: 10px;
   }
-  .feedback{
+  .header__feedback{
     padding-top: 15px;
   }
 
-  .logo img {
+  .header__logo img {
     height: 130px;
     width: 130px;
     border-right: 6px solid #767676;
   }
 
-  .namecompany {
+  .header__namecompany {
     color: #767676;
     font-size: 45px;
   }
 
-  .slogan {
+  .header__slogan {
     font-size: 20px;
     margin: 5px 0px 0px 11px;
   }
 
-  .menu ul {
+  .header__menu ul {
     flex-direction: column;
   }
 
-  .menu li {
+  .header__menu li {
     border-right: none;
     border-bottom: 3px solid #fff;
     margin: 0;
   }
 
-  .menu ul li {
+  .header__menu ul li {
     padding: 0px 0px 13px 0px;
   }
 
-  .menu li:last-child {
+  .header__menu li:last-child {
     border-bottom: none;
   }
-  
-  
-
 }
 
 /* Для екранів від 768 пікселів і більше */
 @media (min-width: 769px) {
-  .logo-phone-container{
+  .header__body{
     display: flex;
     justify-content: center;
   }
-  .menu {
+  .header__menu {
     height: 50px;
   }
 
-  .menu ul {
+  .header__menu ul {
     flex-direction: row;
   }
 
-  .menu li {
+  .header__menu li {
     border-right: 2px solid #fff;
     padding-right: 10px;
     margin: 10px 5px;
   }
 
-  .menu li:last-child {
+  .header__menu li:last-child {
     border-right: none;
   }
  
-  .menu a {
+  .header__menu a {
     padding: 0;
     display: inline-block;
     border-bottom: none;
   }
-  .menu a:hover{
+  .header__menu a:hover{
     text-decoration: underline;
   }
   
-  .menu-btn{
+  .header__menu-btn{
     display: none;
   }
-  .logo{
+  .header__logo{
     margin-right: auto;
     padding-left: 10px;
   }
-  .phone{
+  .header__phone{
     padding-right: 10px;
   }
 }

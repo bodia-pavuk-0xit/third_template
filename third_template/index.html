@@ -14,7 +14,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="shortcut icon" href="img/icons.png" type="image/png">
 
 
 
@@ -24,37 +25,37 @@
 
 <body>
 	<header class="header">
-		<div class="logo-phone-container">
-			<div class="logo">
+		<div class="header__body">
+			<div class="header__logo">
 				<a href="#"><img src="img/logo.png" alt="Logo"></a>
-				<div class="name-slogan-block">
-					<div class="namecompany">
+				<div class="header__sloganblock">
+					<div class="header__namecompany">
 						<p>Sales</p>
 					</div>
-					<div class="namecompany">
+					<div class="header__namecompany">
 						<p>company</p>
 					</div>
-					<div class="slogan">
+					<div class="header__slogan">
 						<p>the best company</p>
 					</div>
 				</div>
-				<div class="menu-btn">
+				<div class="header__menu-btn">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
 			</div>
 
-			<div class="phone">
+			<div class="header__phone">
 				<p>+1(800) 123-45-67</p>
 				<p>+1(800) 765-43-21</p>
-				<p class="feedback"><a href="#" id="openForm">Feedback</a></p>
+				<p class="header__feedback"><a href="#" id="openForm">Feedback</a></p>
 			</div>
 
 		</div>
-		<div class="menu">
-			<div class="navigation-container">
-				<nav class="navigation">
+		<div class="header__menu">
+			<div class="header__navigationbody">
+				<nav class="header__navigation">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Catalog</a></li>
@@ -67,22 +68,23 @@
 		</div>
 	</header>
 
-
-
 	<div class="slider">
-		<div class="slide__item">
-			<img src="img/slide_1.png" alt="">
-		</div>
-		<div class="slide__item">
-			<img src="img/slide_2.png" alt="">
-		</div>
-		<div class="slide__item">
-			<img src="img/slide_1.png" alt="">
-		</div>
-		<div class="slide__item">
-			<img src="img/slide_2.png" alt="">
+		<div class="slider__body">
+			<div class="slider__item">
+				<img src="img/slide_1.png" alt="">
+			</div>
+			<div class="slider__item">
+				<img src="img/slide_2.png" alt="">
+			</div>
+			<div class="slider__item">
+				<img src="img/slide_1.png" alt="">
+			</div>
+			<div class="slider__item">
+				<img src="img/slide_2.png" alt="">
+			</div>
 		</div>
 	</div>
+
 	<div class="container">
 		<ul class="breadcrumb">
 			<li><a href="#">Home</a></li>
@@ -97,13 +99,30 @@
 			<div class="content__leftblock">
 				<div class="content__list">
 					<div class="content__item">
-						<a href="#">Cars</a>
-					</div>
-					<div class="content__item content__item_active">
-						<a href="#" class="">Appliances</a>
+						<p>Cars</p>
 					</div>
 					<ul class="content__subitems">
-						<li class="subitemslist subitemslist_active">
+						<li class="subitemslist">
+							<a href="#">Rolls-Royce</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Aston Martin</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Bentley</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Jaguar</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Land Rover</a>
+						</li>
+					</ul>
+					<div class="content__item content__item_active">
+						<p>Appliances</p>
+					</div>
+					<ul class="content__subitems">
+						<li class="subitemslist">
 							<a href="#">Microwaves</a>
 						</li>
 						<li class="subitemslist">
@@ -117,20 +136,83 @@
 						</li>
 					</ul>
 					<div class="content__item">
-						<a href="#">Mobile technology</a>
+						<p>Mobile technology</p>
 					</div>
+					<ul class="content__subitems">
+						<li class="subitemslist">
+							<a href="#">Xiaomi</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Sumsung</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Apple</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Lenovo</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Microsoft</a>
+						</li>
+					</ul>
 					<div class="content__item">
-						<a href="#">Computers</a>
+						<p>Computers</p>
 					</div>
+					<ul class="content__subitems">
+						<li class="subitemslist">
+							<a href="#">Asus</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Aser</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">HP</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">AOC</a>
+						</li>
+					</ul>
 					<div class="content__item">
-						<a href="#">Cloth</a>
+						<p>Cloth</p>
 					</div>
+					<ul class="content__subitems">
+						<li class="subitemslist">
+							<a href="#">Dress</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Cardigan</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Jacket</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Blouse</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Hat</a>
+						</li>
+					</ul>
 					<div class="content__item">
-						<a href="#">Real estate</a>
+						<p>Real estate</p>
 					</div>
+					<ul class="content__subitems">
+						<li class="subitemslist">
+							<a href="#">House</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Apartment</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Villa</a>
+						</li>
+						<li class="subitemslist">
+							<a href="#">Cottage</a>
+						</li>
+					</ul>
 				</div>
 				<div class="content__priselist">
-					<img src="img/ms_exel.png" alt="Exel">
+					<a href="https://docs.google.com/spreadsheets/d/1WRlId_qZHbXWju-pruW_tPJ6_R80yTI0VvVGYOvwtLE/edit?usp=sharing"
+						target="_blank"><img src="img/ms_exel.png" alt="Exel"></a>
 					<p>Price-list</p>
 				</div>
 			</div>
@@ -138,7 +220,7 @@
 				<div class="content__goods">
 					<div class="content__rowitems rowitems">
 						<img src="img/nophoto.png" alt="Photo Product">
-						<p class="rowitems__marginp">Coolest kettle to buy!</p>
+						<p class="rowitems__marginp"><a href="#">Coolest kettle to buy!</a></p>
 						<div class="rowitems__buy">
 							<p>1900$</p>
 							<a href="#"><img src="img/addtobasket.png" alt="Add To Basket"></a>
@@ -146,7 +228,7 @@
 					</div>
 					<div class="content__rowitems rowitems">
 						<img src="img/nophoto.png" alt="Photo Product">
-						<p class="rowitems__marginp">Coolest kettle to buy!</p>
+						<p class="rowitems__marginp"><a href="#">Coolest kettle to buy!</a></p>
 						<div class="rowitems__buy">
 							<p>1900$</p>
 							<a href="#"><img src="img/addtobasket.png" alt="Add To Basket"></a>
@@ -154,7 +236,7 @@
 					</div>
 					<div class="content__rowitems rowitems">
 						<img src="img/nophoto.png" alt="Photo Product">
-						<p class="rowitems__marginp">Coolest kettle to buy!</p>
+						<p class="rowitems__marginp"><a href="#">Coolest kettle to buy!</a></p>
 						<div class="rowitems__buy">
 							<p>1900$</p>
 							<a href="#"><img src="img/addtobasket.png" alt="Add To Basket"></a>
@@ -162,7 +244,7 @@
 					</div>
 					<div class="content__rowitems rowitems">
 						<img src="img/nophoto.png" alt="Photo Product">
-						<p class="rowitems__marginp">Coolest kettle to buy!</p>
+						<p class="rowitems__marginp"><a href="#">Coolest kettle to buy!</a></p>
 						<div class="rowitems__buy">
 							<p>1900$</p>
 							<a href="#"><img src="img/addtobasket.png" alt="Add To Basket"></a>
@@ -170,7 +252,7 @@
 					</div>
 					<div class="content__rowitems rowitems">
 						<img src="img/nophoto.png" alt="Photo Product">
-						<p class="rowitems__marginp">Coolest kettle to buy!</p>
+						<p class="rowitems__marginp"><a href="#">Coolest kettle to buy!</a></p>
 						<div class="rowitems__buy">
 							<p>1900$</p>
 							<a href="#"><img src="img/addtobasket.png" alt="Add To Basket"></a>
@@ -243,9 +325,9 @@
 			<form>
 				<h2>Feedback</h2>
 				<label for="name">Name</label>
-				<input type="text" id="name" name="name">
+				<input type="text" id="name" name="name" placeholder="Required field" required>
 				<label for="phone">Phone</label>
-				<input type="tel" id="phone" name="phone" pattern="[0-9,+,(,)]*">
+				<input type="tel" id="phone" name="phone" pattern="[0-9,+,(,)]*" placeholder="Required field" required>
 				<label for="email">Email</label>
 				<input type="email" id="email" name="email" placeholder="Required field" required>
 				<label for="feedback">Feedback</label>

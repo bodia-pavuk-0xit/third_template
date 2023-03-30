@@ -1,5 +1,6 @@
 /* Для екранів з шириною менше 320px*/
 @media (max-width: 320px) {
+
     /* CSS правила для адаптивного дизайну */
     .popup {
         color: #535353;
@@ -14,9 +15,19 @@
         height: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.5s ease-in-out forwards;
     }
-    
-    
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
     .popup-content {
         background-color: #fefefe;
         margin: 10% auto;
@@ -25,13 +36,13 @@
         width: 240px;
         position: relative;
     }
-    
+
     .popup-content form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .popup-content input {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
@@ -40,42 +51,42 @@
         margin-bottom: 5%;
         font-size: 16px;
     }
-    
+
     .popup-content input:required {
         height: 40px;
         box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
         border: 1px solid #ff8383;
         background-color: #ffffff;
     }
-    
+
     ::-webkit-input-placeholder {
         /* для Safari і Chrome */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-moz-placeholder {
         /* для Firefox 18- */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     ::-moz-placeholder {
         /* для Firefox 19+ */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-ms-input-placeholder {
         /* для IE */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     .popup-content h2 {
         text-transform: uppercase;
         font-size: 35px;
@@ -83,24 +94,24 @@
         padding-top: 8%;
         padding-bottom: 10%;
     }
-    
+
     .popup-content textarea {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
         width: 90%;
     }
-    
+
     input[type="text"],
     [type="email"],
     [type="tel"] {
         padding: 3% 2%;
     }
-    
+
     textarea {
         padding: 3% 2%;
         resize: none;
     }
-    
+
     .close {
         display: flex;
         justify-content: center;
@@ -116,7 +127,7 @@
         background-color: #767676;
         border: 1px solid #fff;
     }
-    
+
     button {
         height: 40px;
         width: 125px;
@@ -129,14 +140,14 @@
         margin-top: 4%;
         border-radius: 2px;
     }
-    
+
     .close:hover,
     .close:focus {
         color: #535353;
         text-decoration: none;
         cursor: pointer;
     }
-    
+
     button:hover,
     button:focus {
         color: #535353;
@@ -144,10 +155,18 @@
         cursor: pointer;
     }
 
+    .popup-content input:required:valid {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(69, 236, 91, 0.75);
+        border: 1px solid #92ff83;
+        background-color: #ffffff;
+    }
+
 }
 
 /* Для екранів з шириною від 320px до 768px */
 @media (min-width: 320px) and (max-width: 768px) {
+
     /* CSS правила для адаптивного дизайну */
     .popup {
         color: #535353;
@@ -162,24 +181,35 @@
         height: 100%;
         overflow: auto;
         background-color: rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.5s ease-in-out forwards;
     }
-    
-    
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
     .popup-content {
         background-color: #fefefe;
         margin: 10% auto;
         padding: 20px;
         border: 1px solid #767676;
-        width: 270px;
+        width: 300px;
         position: relative;
     }
-    
+
     .popup-content form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .popup-content input {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
@@ -188,42 +218,42 @@
         margin-bottom: 5%;
         font-size: 16px;
     }
-    
+
     .popup-content input:required {
         height: 40px;
         box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
         border: 1px solid #ff8383;
         background-color: #ffffff;
     }
-    
+
     ::-webkit-input-placeholder {
         /* для Safari і Chrome */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-moz-placeholder {
         /* для Firefox 18- */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     ::-moz-placeholder {
         /* для Firefox 19+ */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-ms-input-placeholder {
         /* для IE */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     .popup-content h2 {
         text-transform: uppercase;
         font-size: 35px;
@@ -231,24 +261,24 @@
         padding-top: 8%;
         padding-bottom: 10%;
     }
-    
+
     .popup-content textarea {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
         width: 90%;
     }
-    
+
     input[type="text"],
     [type="email"],
     [type="tel"] {
         padding: 3% 2%;
     }
-    
+
     textarea {
         padding: 3% 2%;
         resize: none;
     }
-    
+
     .close {
         display: flex;
         justify-content: center;
@@ -256,15 +286,15 @@
         width: 25px;
         height: 25px;
         position: absolute;
-        top: -25px;
-        right: -25px;
+        top: 15px;
+        right: 15px;
         color: #fff;
         font-size: 28px;
         font-weight: 700;
         background-color: #767676;
         border: 1px solid #fff;
     }
-    
+
     button {
         height: 40px;
         width: 125px;
@@ -277,24 +307,32 @@
         margin-top: 4%;
         border-radius: 2px;
     }
-    
+
     .close:hover,
     .close:focus {
         color: #535353;
         text-decoration: none;
         cursor: pointer;
     }
-    
+
     button:hover,
     button:focus {
         color: #535353;
         text-decoration: none;
         cursor: pointer;
     }
+
+    .popup-content input:required:valid {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(69, 236, 91, 0.75);
+        border: 1px solid #92ff83;
+        background-color: #ffffff;
+    }
 }
 
 /* Для екранів з шириною від 768px до 1024px */
 @media (min-width: 768px) and (max-width: 1024px) {
+
     /* CSS правила для адаптивного дизайну */
     .popup {
         color: #535353;
@@ -309,9 +347,20 @@
         overflow: auto;
         font-size: 20px;
         background-color: rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.5s ease-in-out forwards;
     }
-    
-    
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+
     .popup-content {
         background-color: #fefefe;
         margin: 10% auto;
@@ -320,13 +369,13 @@
         width: 450px;
         position: relative;
     }
-    
+
     .popup-content form {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .popup-content input {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
@@ -334,44 +383,52 @@
         height: 50px;
         margin-bottom: 5%;
     }
-    
+
     .popup-content input:required {
         height: 40px;
         box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
         border: 1px solid #ff8383;
         background-color: #ffffff;
     }
-    
+
+    .popup-content input:required:valid {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(69, 236, 91, 0.75);
+        border: 1px solid #92ff83;
+        background-color: #ffffff;
+    }
+
+
     ::-webkit-input-placeholder {
         /* для Safari і Chrome */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-moz-placeholder {
         /* для Firefox 18- */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     /* #83ff89 */
-    
+
     ::-moz-placeholder {
         /* для Firefox 19+ */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     :-ms-input-placeholder {
         /* для IE */
         color: #ff8383;
         font-style: italic;
         padding-left: 2%;
     }
-    
+
     .popup-content h2 {
         text-transform: uppercase;
         font-size: 30px;
@@ -379,24 +436,24 @@
         padding-top: 8%;
         padding-bottom: 10%;
     }
-    
+
     .popup-content textarea {
         border: 1px solid #c3c3c3;
         border-radius: 3px;
         width: 80%;
     }
-    
+
     input[type="text"],
     [type="email"],
     [type="tel"] {
         padding: 3% 2%;
     }
-    
+
     textarea {
         padding: 3% 2%;
         resize: none;
     }
-    
+
     .close {
         display: flex;
         justify-content: center;
@@ -411,7 +468,7 @@
         font-weight: 700;
         background-color: #767676;
     }
-    
+
     button {
         height: 40px;
         width: 125px;
@@ -424,19 +481,26 @@
         margin-top: 4%;
         border-radius: 2px;
     }
-    
+
     .close:hover,
     .close:focus {
         color: #535353;
         text-decoration: none;
         cursor: pointer;
     }
-    
+
     button:hover,
     button:focus {
         color: #535353;
         text-decoration: none;
         cursor: pointer;
+    }
+
+    .popup-content input:required:valid {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(69, 236, 91, 0.75);
+        border: 1px solid #92ff83;
+        background-color: #ffffff;
     }
 }
 
@@ -444,145 +508,165 @@
 @media (min-width: 1024px) {
     /* CSS правила для адаптивного дизайну */
 
-.popup {
-    color: #535353;
-    font-family: "PT Sans";
-    display: none;
-    position: fixed;
-    z-index: 30;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-}
+    .popup {
+        color: #535353;
+        font-family: "PT Sans";
+        display: none;
+        position: fixed;
+        z-index: 30;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.4);
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .popup-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #767676;
+        width: 450px;
+        position: relative;
+    }
+
+    .popup-content form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popup-content input {
+        border: 1px solid #c3c3c3;
+        border-radius: 3px;
+        width: 80%;
+        height: 40px;
+        margin-bottom: 5%;
+    }
 
 
-.popup-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #767676;
-    width: 450px;
-    position: relative;
-}
+    .popup-content input:required {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
+        border: 1px solid #ff8383;
+        background-color: #ffffff;
+    }
 
-.popup-content form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    .popup-content input:required:valid {
+        height: 40px;
+        box-shadow: inset 0 0 13px rgba(69, 236, 91, 0.75);
+        border: 1px solid #92ff83;
+        background-color: #ffffff;
+    }
 
-.popup-content input {
-    border: 1px solid #c3c3c3;
-    border-radius: 3px;
-    width: 80%;
-    height: 40px;
-    margin-bottom: 5%;
-}
+    ::-webkit-input-placeholder {
+        /* для Safari і Chrome */
+        color: #ff8383;
+        font-style: italic;
+        padding-left: 2%;
+    }
 
-.popup-content input:required {
-    height: 40px;
-    box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
-    border: 1px solid #ff8383;
-    background-color: #ffffff;
-}
+    :-moz-placeholder {
+        /* для Firefox 18- */
+        color: #ff8383;
+        font-style: italic;
+        padding-left: 2%;
+    }
 
-::-webkit-input-placeholder {
-    /* для Safari і Chrome */
-    color: #ff8383;
-    font-style: italic;
-    padding-left: 2%;
-}
+    /* #83ff89 */
 
-:-moz-placeholder {
-    /* для Firefox 18- */
-    color: #ff8383;
-    font-style: italic;
-    padding-left: 2%;
-}
+    ::-moz-placeholder {
+        /* для Firefox 19+ */
+        color: #ff8383;
+        font-style: italic;
+        padding-left: 2%;
+    }
 
-/* #83ff89 */
+    :-ms-input-placeholder {
+        /* для IE */
+        color: #ff8383;
+        font-style: italic;
+        padding-left: 2%;
+    }
 
-::-moz-placeholder {
-    /* для Firefox 19+ */
-    color: #ff8383;
-    font-style: italic;
-    padding-left: 2%;
-}
+    .popup-content h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+        padding-top: 8%;
+        padding-bottom: 10%;
+    }
 
-:-ms-input-placeholder {
-    /* для IE */
-    color: #ff8383;
-    font-style: italic;
-    padding-left: 2%;
-}
+    .popup-content textarea {
+        border: 1px solid #c3c3c3;
+        border-radius: 3px;
+        width: 80%;
+    }
 
-.popup-content h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: 700;
-    padding-top: 8%;
-    padding-bottom: 10%;
-}
+    input[type="text"],
+    [type="email"],
+    [type="tel"] {
+        padding: 3% 2%;
+    }
 
-.popup-content textarea {
-    border: 1px solid #c3c3c3;
-    border-radius: 3px;
-    width: 80%;
-}
+    textarea {
+        padding: 3% 2%;
+        resize: none;
+    }
 
-input[type="text"],
-[type="email"],
-[type="tel"] {
-    padding: 3% 2%;
-}
+    .close {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: -25px;
+        right: -25px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 700;
+        background-color: #767676;
+    }
 
-textarea {
-    padding: 3% 2%;
-    resize: none;
-}
 
-.close {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: -25px;
-    right: -25px;
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
-    background-color: #767676;
-}
 
-button {
-    height: 40px;
-    width: 125px;
-    background-color: #767676;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 2px;
-    margin-top: 4%;
-    border-radius: 2px;
-}
+    button {
+        height: 40px;
+        width: 125px;
+        background-color: #767676;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-top: 4%;
+        border-radius: 2px;
+    }
 
-.close:hover,
-.close:focus {
-    color: #535353;
-    text-decoration: none;
-    cursor: pointer;
-}
+    .close:hover,
+    .close:focus {
+        color: #535353;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-button:hover,
-button:focus {
-    color: #535353;
-    text-decoration: none;
-    cursor: pointer;
-}
+    button:hover,
+    button:focus {
+        color: #535353;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
